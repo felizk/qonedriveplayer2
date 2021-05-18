@@ -4,9 +4,23 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api';
+import { defineComponent, provide } from '@vue/composition-api';
+import { Microsoft, MicrosoftKey } from './auth/microsoft';
+
+const microsoft = new Microsoft();
 
 export default defineComponent({
   name: 'App',
+  setup() {
+    provide(MicrosoftKey, microsoft);
+  },
+  beforeRouteEnter(to, from, next)
+  {
+    if (to.name !== 'Login' && !microsoft.isLoggedIn) {
+      next({ name: 'Login' });
+    } else {
+      next()
+    }
+  }
 });
 </script>
