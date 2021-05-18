@@ -10,7 +10,7 @@ I am by no means an expert in any of this...
 
 I just followed the Quasar dev instructions, added the Microsoft class and injected into a few components.
 
-Features:
+## Features:
 
  * Login via MSAL
  * Fetch user from Microsoft Graph
