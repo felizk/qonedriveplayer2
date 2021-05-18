@@ -9,3 +9,10 @@ I mostly put it here so someone else may copy and paste it.
 I am by no means an expert in any of this... 
 
 I just followed the Quasar dev instructions, added the Microsoft class and injected into a few components.
+
+Features:
+
+ * Login via MSAL
+ * Fetch user from Microsoft Graph
+ * Navigation Guard that puts you to the login screen if not logged in
+ * Composition api use to inject instance of the Microsoft objects.
