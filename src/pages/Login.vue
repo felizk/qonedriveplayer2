@@ -30,7 +30,6 @@ export default defineComponent({
     }
 
     onMounted(goHome);
-
     return { login };
   }
 });

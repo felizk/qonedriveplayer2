@@ -1,26 +1,9 @@
 # OneDrive Player (qonedriveplayer2)
 
-A Quasar Framework app
+This is a little project I've setup to connect to Microsoft Graph using MSAL.
 
-## Install the dependencies
-```bash
-npm install
-```
+It's a Quasar app that uses composition-api and Vue 2.
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+I mostly put it here so someone else may copy and paste it.
 
-### Lint the files
-```bash
-npm run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
+I am by no means an expert in any of this... 

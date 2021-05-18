@@ -14,6 +14,8 @@ export default defineComponent({
   setup() {
     provide(MicrosoftKey, microsoft);
   },
+  
+  // This is the navigation guard that puts you back to the login screen if not logged in.
   beforeRouteEnter(to, from, next)
   {
     if (to.name !== 'Login' && !microsoft.isLoggedIn) {
